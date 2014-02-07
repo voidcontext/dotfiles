@@ -12,19 +12,19 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " My Bundles here
-Bundle 'tpope/vim-fugitive'
-Bundle 'scrooloose/nerdtree'
-Bundle 'jelera/vim-javascript-syntax'
-Bundle 'vim-scripts/JavaScript-Indent'
-Bundle 'mhinz/vim-signify'
-Bundle 'cakebaker/scss-syntax.vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'Yggdroot/indentLine'
-Bundle 'scrooloose/syntastic'
-Bundle 'Raimondi/delimitMate'
-"Bundle 'phleet/vim-mercenary'
-Bundle 'bling/vim-airline'
-Bundle 'rosenfeld/conque-term'
+Bundle 'tpope/vim-fugitive' "git plugin
+Bundle 'scrooloose/nerdtree' " tree file browser
+Bundle 'jelera/vim-javascript-syntax' " extended javascript syntax
+Bundle 'vim-scripts/JavaScript-Indent' " javascript indent
+Bundle 'mhinz/vim-signify' " show diff signs
+Bundle 'cakebaker/scss-syntax.vim' " sass syntax
+Bundle 'kien/ctrlp.vim' " search files
+Bundle 'Yggdroot/indentLine' " show indents when expandtabs is true
+Bundle 'scrooloose/syntastic' " syntax checker
+Bundle 'Raimondi/delimitMate' " auto brackets
+"Bundle 'phleet/vim-mercenary' " mercurial plugin
+Bundle 'bling/vim-airline' " extended statusbar
+Bundle 'rosenfeld/conque-term' " terminal
 "Bundle 'Valloric/YouCompleteMe'
 
 Bundle 'altercation/vim-colors-solarized'
@@ -57,13 +57,15 @@ set t_Co=256
 colorscheme Monokai
 set laststatus=2
 
-"let g:solarized_termcolors=256
-"colorscheme solarized
-
+" Mappings
 map <C-n> :tabnew<CR>
 map <C-l> :NERDTreeToggle<CR>
 
+" CtrlP options
 let g:ctrlp_show_hidden = 1
+let g:ctrlp_custom_ignore = '\v[\/](\.(git|hg|svn|sass-cache|vagrant|librarian|node)|node_modules)$'
+ 
+" Airline options
 let g:airline_theme='wombat'
 
 

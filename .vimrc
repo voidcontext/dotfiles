@@ -66,6 +66,7 @@ set shiftwidth=4
 set showtabline=1
 set autoindent
 
+au BufNewFile,BufRead *.ejs set filetype=html
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType json setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 expandtab

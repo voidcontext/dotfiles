@@ -44,6 +44,9 @@ Bundle 'yegappan/grep'
 "Bundle 'Valloric/YouCompleteMe'
 " code completion
 Bundle 'Shougo/neocomplcache.vim'
+" match html tags
+Bundle 'gregsexton/MatchTag'
+		
 
 " solarized colorscheme
 "Bundle 'altercation/vim-colors-solarized'
@@ -71,8 +74,10 @@ autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType json setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 expandtab
 
-set smartcase
 set incsearch
+set hlsearch
+set ignorecase
+set smartcase
 
 set tags=.tags
 
@@ -131,3 +136,7 @@ inoremap <expr><Left>  neocomplcache#close_popup() . "\<Left>"
 inoremap <expr><Right> neocomplcache#close_popup() . "\<Right>"
 " inoremap <expr><Up>    neocomplcache#close_popup() . "\<Up>"
 " inoremap <expr><Down>  neocomplcache#close_popup() . "\<Down>"
+
+
+set guioptions-=T 
+set guifont=Monospace\ 9

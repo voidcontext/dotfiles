@@ -78,6 +78,7 @@ set tags=.tags
 set t_Co=256
 colorscheme Monokai
 set laststatus=2
+set cursorline
 
 " Mappings
 

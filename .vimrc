@@ -46,7 +46,10 @@ Bundle 'yegappan/grep'
 Bundle 'Shougo/neocomplcache.vim'
 " match html tags
 Bundle 'gregsexton/MatchTag'
-		
+" nerdtree on all tabs
+Bundle 'jistr/vim-nerdtree-tabs'
+Bundle 'digitaltoad/vim-jade'
+
 
 " solarized colorscheme
 "Bundle 'altercation/vim-colors-solarized'
@@ -70,9 +73,11 @@ set showtabline=1
 set autoindent
 
 au BufNewFile,BufRead *.ejs set filetype=html
+au BufNewFile,BufRead *.dust set filetype=html
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType json setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 expandtab
+autocmd FileType jade setlocal shiftwidth=2 tabstop=2 expandtab
 
 set incsearch
 set hlsearch

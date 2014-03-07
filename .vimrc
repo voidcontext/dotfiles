@@ -54,6 +54,7 @@ Bundle 'gregsexton/MatchTag'
 Bundle 'kchmck/vim-coffee-script'
 
 Bundle 'ciaranm/detectindent'
+Bundle 'digitaltoad/vim-jade'
 
 
 " solarized colorscheme
@@ -78,9 +79,11 @@ set showtabline=1
 set autoindent
 
 au BufNewFile,BufRead *.ejs set filetype=html
+au BufNewFile,BufRead *.dust set filetype=html
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType json setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 expandtab
+autocmd FileType jade setlocal shiftwidth=2 tabstop=2 expandtab
 
 set incsearch
 set hlsearch

@@ -93,7 +93,7 @@ set smartcase
 set tags=.tags
 
 set t_Co=256
-colorscheme Monokai
+colorscheme Monokai2
 set laststatus=2
 " off  because makes vim slow
 ""set cursorline

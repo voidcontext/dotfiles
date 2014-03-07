@@ -16,8 +16,12 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 " file tree
 Bundle 'scrooloose/nerdtree'
+" nerdtree tabs
+Bundle 'jistr/vim-nerdtree-tabs'
 " extended javascript syntax
-Bundle 'jelera/vim-javascript-syntax'
+"Bundle 'jelera/vim-javascript-syntax'
+" extended javascript syntax
+Bundle "pangloss/vim-javascript"
 " javascript indent
 Bundle 'vim-scripts/JavaScript-Indent'
 " vcs info on gutter
@@ -27,7 +31,7 @@ Bundle 'cakebaker/scss-syntax.vim'
 " file finder
 Bundle 'kien/ctrlp.vim'
 " show tabs when expandtabs is on
-"Bundle 'Yggdroot/indentLine'
+Bundle 'Yggdroot/indentLine'
 " syntax checker
 Bundle 'scrooloose/syntastic'
 " auto brackets
@@ -46,7 +50,11 @@ Bundle 'yegappan/grep'
 Bundle 'Shougo/neocomplcache.vim'
 " match html tags
 Bundle 'gregsexton/MatchTag'
-		
+" coffee sscript
+Bundle 'kchmck/vim-coffee-script'
+
+Bundle 'ciaranm/detectindent'
+
 
 " solarized colorscheme
 "Bundle 'altercation/vim-colors-solarized'
@@ -84,7 +92,8 @@ set tags=.tags
 set t_Co=256
 colorscheme Monokai
 set laststatus=2
-set cursorline
+" off  because makes vim slow
+""set cursorline
 
 " Mappings
 
@@ -98,9 +107,16 @@ map <C-l> :NERDTreeToggle<CR>
 " CtrlP options
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_custom_ignore = '\v[\/](\.(git|hg|svn|sass-cache|vagrant|librarian|node)|node_modules)$'
- 
+
 " Airline options
 let g:airline_theme='wombat'
+
+" Indentline
+
+let g:indentLine_faster = 1
+let g:indentLine_char = '¦'
+set list lcs=tab:\┆\ 
+
 
 
 " NeoComplCache settings

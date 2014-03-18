@@ -25,7 +25,8 @@ Bundle "pangloss/vim-javascript"
 " javascript indent
 Bundle 'vim-scripts/JavaScript-Indent'
 " vcs info on gutter
-Bundle 'mhinz/vim-signify'
+"Bundle 'mhinz/vim-signify'
+Bundle 'iwilldiffer.vim'
 " sass syntax
 Bundle 'cakebaker/scss-syntax.vim'
 " file finder
@@ -52,6 +53,8 @@ Bundle 'Shougo/neocomplcache.vim'
 Bundle 'gregsexton/MatchTag'
 " coffee sscript
 Bundle 'kchmck/vim-coffee-script'
+" Color scheme gui only
+Bundle 'lsdr/monokai'
 
 Bundle 'ciaranm/detectindent'
 Bundle 'digitaltoad/vim-jade'
@@ -93,10 +96,9 @@ set smartcase
 set tags=.tags
 
 set t_Co=256
-colorscheme Monokai2
 set laststatus=2
-" off  because makes vim slow
-""set cursorline
+set cursorline
+set lazyredraw
 
 " Mappings
 
@@ -117,10 +119,13 @@ let g:airline_theme='wombat'
 " Indentline
 
 let g:indentLine_faster = 1
-let g:indentLine_char = '¦'
-set list lcs=tab:\┆\ 
+let g:indentLine_char = '┆'
+let g:indentLine_color_term = 237
+set list lcs=tab:\|\▸
 
-
+"
+let g:iwilldiffer_check_on_open=1
+let g:iwilldiffer_check_on_save=1
 
 " NeoComplCache settings
 
@@ -156,6 +161,14 @@ inoremap <expr><Right> neocomplcache#close_popup() . "\<Right>"
 " inoremap <expr><Up>    neocomplcache#close_popup() . "\<Up>"
 " inoremap <expr><Down>  neocomplcache#close_popup() . "\<Down>"
 
+" GUI dependent settings
+if has("gui_running")
+	colorscheme monokai
 
-set guioptions-=T 
-set guifont=Monospace\ 9
+	" Remove toolbar
+	set guioptions-=T 
+	set guifont=Monospace\ 9
+else
+	colorscheme Monokai2
+endif
+hi SpecialKey ctermfg=237

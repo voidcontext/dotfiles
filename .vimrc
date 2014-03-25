@@ -25,8 +25,7 @@ Bundle "pangloss/vim-javascript"
 " javascript indent
 Bundle 'vim-scripts/JavaScript-Indent'
 " vcs info on gutter
-"Bundle 'mhinz/vim-signify'
-Bundle 'iwilldiffer.vim'
+Bundle 'mhinz/vim-signify'
 " sass syntax
 Bundle 'cakebaker/scss-syntax.vim'
 " file finder
@@ -108,6 +107,7 @@ cab Wq wq
 
 map <C-n> :tabnew<CR>
 map <C-l> :NERDTreeToggle<CR>
+map <F2> :set invlist<CR>:IndentLinesToggle<CR>
 
 " CtrlP options
 let g:ctrlp_show_hidden = 1
@@ -124,8 +124,7 @@ let g:indentLine_color_term = 237
 set list lcs=tab:\|\▸
 
 "
-let g:iwilldiffer_check_on_open=1
-let g:iwilldiffer_check_on_save=1
+let g:signify_vcs_list = [ 'git' ]  
 
 " NeoComplCache settings
 

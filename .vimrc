@@ -125,7 +125,6 @@ set list lcs=tab:\|\▸
 
 "
 let g:signify_vcs_list = [ 'git' ]  
-
 " NeoComplCache settings
 
 " Use neocomplcache.

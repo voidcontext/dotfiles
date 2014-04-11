@@ -165,7 +165,11 @@ if has("gui_running")
 
 	" Remove toolbar
 	set guioptions-=T 
-	set guifont=Monospace\ 9
+	set guioptions-=m
+	set guioptions-=L
+	set guioptions-=r
+	set guioptions-=e
+	set guifont=Liberation\ Mono\ 9
 else
 	colorscheme Monokai2
 endif

@@ -177,7 +177,7 @@ if has("gui_running")
 	set guioptions-=r
 	set guioptions-=e
 	set guifont=Liberation\ Mono\ for\ Powerline\ 9
-	let g:airline_powerline_fonts = 1
+	let g:airline_powerline_fonts=1
 else
 	colorscheme Monokai2
 endif

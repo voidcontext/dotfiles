@@ -16,8 +16,8 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 " file tree
 Bundle 'scrooloose/nerdtree'
-" nerdtree tabs
-Bundle 'jistr/vim-nerdtree-tabs'
+" nerdtree tabs - not used because of ctrl-space
+"Bundle 'jistr/vim-nerdtree-tabs'
 " extended javascript syntax
 "Bundle 'jelera/vim-javascript-syntax'
 " extended javascript syntax
@@ -58,6 +58,8 @@ Bundle 'lsdr/monokai'
 Bundle 'ciaranm/detectindent'
 Bundle 'digitaltoad/vim-jade'
 
+Bundle 'szw/vim-ctrlspace'
+
 
 " solarized colorscheme
 "Bundle 'altercation/vim-colors-solarized'
@@ -82,6 +84,7 @@ set autoindent
 
 au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.dust set filetype=html
+
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType json setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 expandtab
@@ -108,6 +111,9 @@ cab Wq wq
 map <C-n> :tabnew<CR>
 map <C-l> :NERDTreeToggle<CR>
 map <F2> :set invlist<CR>:IndentLinesToggle<CR>
+map <F4> :SignifyToggle<CR>
+map <F6> :split<CR>:ConqueTerm bash<CR>
+map <C-F6> :vsplit<CR>:ConqueTerm bash<CR>
 
 " CtrlP options
 let g:ctrlp_show_hidden = 1
@@ -115,6 +121,7 @@ let g:ctrlp_custom_ignore = '\v[\/](\.(git|hg|svn|sass-cache|vagrant|librarian|n
 
 " Airline options
 let g:airline_theme='wombat'
+let g:airline_exclude_preview = 1
 
 " Indentline
 
@@ -169,7 +176,8 @@ if has("gui_running")
 	set guioptions-=L
 	set guioptions-=r
 	set guioptions-=e
-	set guifont=Liberation\ Mono\ 9
+	set guifont=Liberation\ Mono\ for\ Powerline\ 9
+	let g:airline_powerline_fonts = 1
 else
 	colorscheme Monokai2
 endif

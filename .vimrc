@@ -178,6 +178,10 @@ if has("gui_running")
 	set guioptions-=e
 	set guifont=Liberation\ Mono\ for\ Powerline\ 9
 	let g:airline_powerline_fonts=1
+
+	hi CtrlSpaceNormal guifg=#F8F8F2 guibg=#3E3D32
+	hi CtrlSpaceSelected guifg=#FD971F guibg=#272822 gui=bold
+
 else
 	colorscheme Monokai2
 endif

@@ -10,4 +10,8 @@ function hg
 	end
  end
 
+function cdhr
+	cd (hg root)
+end
+
 umask 0022

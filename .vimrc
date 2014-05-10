@@ -59,6 +59,7 @@ Bundle 'ciaranm/detectindent'
 Bundle 'digitaltoad/vim-jade'
 
 Bundle 'szw/vim-ctrlspace'
+Bundle 'majutsushi/tagbar'
 
 
 " solarized colorscheme
@@ -166,6 +167,9 @@ inoremap <expr><Right> neocomplcache#close_popup() . "\<Right>"
 " inoremap <expr><Up>    neocomplcache#close_popup() . "\<Up>"
 " inoremap <expr><Down>  neocomplcache#close_popup() . "\<Down>"
 
+" tagbar
+nmap <F8> :TagbarToggle<CR> 
+
 " GUI dependent settings
 if has("gui_running")
 	colorscheme monokai
@@ -185,4 +189,4 @@ if has("gui_running")
 else
 	colorscheme Monokai2
 endif
-hi SpecialKey ctermfg=237
+hi SpecialKey ctermfg=237 guifg=#333333

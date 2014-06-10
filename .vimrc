@@ -15,7 +15,7 @@ Bundle 'gmarik/vundle'
 " git plugin
 Bundle 'tpope/vim-fugitive'
 " file tree
-Bundle 'scrooloose/nerdtree'
+"Bundle 'scrooloose/nerdtree'
 " nerdtree tabs - not used because of ctrl-space
 "Bundle 'jistr/vim-nerdtree-tabs'
 " extended javascript syntax
@@ -44,6 +44,8 @@ Bundle 'bling/vim-airline'
 Bundle 'rosenfeld/conque-term'
 " recursive grep in files
 Bundle 'yegappan/grep'
+" the silver searcher
+Bundle 'rking/ag.vim'
 " code completion
 "Bundle 'Valloric/YouCompleteMe'
 " code completion
@@ -85,6 +87,7 @@ set autoindent
 
 au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.dust set filetype=html
+au BufNewFile,BufRead *.jade set filetype=jade
 
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType json setlocal shiftwidth=2 tabstop=2 expandtab

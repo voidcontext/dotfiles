@@ -43,9 +43,9 @@ Bundle 'bling/vim-airline'
 " terminal inside vim
 Bundle 'rosenfeld/conque-term'
 " recursive grep in files
-Bundle 'yegappan/grep'
+"Bundle 'yegappan/grep'
 " the silver searcher
-Bundle 'rking/ag.vim'
+Bundle 'ervandew/ag'
 " code completion
 "Bundle 'Valloric/YouCompleteMe'
 " code completion

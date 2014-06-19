@@ -1,3 +1,5 @@
+syntax on
+
 set shell=bash
 "let $TMPDIR = $HOME."/.tmp"
 
@@ -42,10 +44,9 @@ Bundle 'phleet/vim-mercenary'
 Bundle 'bling/vim-airline'
 " terminal inside vim
 Bundle 'rosenfeld/conque-term'
-" recursive grep in files
-"Bundle 'yegappan/grep'
 " the silver searcher
-Bundle 'ervandew/ag'
+" Bundle 'ervandew/ag'
+Bundle 'rking/ag.vim'
 " code completion
 "Bundle 'Valloric/YouCompleteMe'
 " code completion
@@ -84,6 +85,7 @@ set tabstop=4
 set shiftwidth=4
 set showtabline=1
 set autoindent
+set bs=2
 
 au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.dust set filetype=html

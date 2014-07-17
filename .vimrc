@@ -44,14 +44,15 @@ Bundle 'bling/vim-airline'
 Bundle 'rosenfeld/conque-term'
 " recursive grep in files
 "Bundle 'yegappan/grep'
-" the silver searcher
-Bundle 'ervandew/ag'
+" Ag searcher (needs silversearcher-ag)
+"Bundle 'ervandew/ag'
+Bundle 'rking/ag.vim'
 " code completion
 "Bundle 'Valloric/YouCompleteMe'
 " code completion
 Bundle 'Shougo/neocomplcache.vim'
 " match html tags
-Bundle 'gregsexton/MatchTag'
+"Bundle 'gregsexton/MatchTag'
 " coffee sscript
 Bundle 'kchmck/vim-coffee-script'
 " Color scheme gui only
@@ -165,8 +166,8 @@ inoremap <expr><C-e>  neocomplcache#cancel_popup()
 " inoremap <expr><Space> pumvisible() ? neocomplcache#close_popup() : "\<Space>"
 
 " For cursor moving in insert mode(Not recommended)
-inoremap <expr><Left>  neocomplcache#close_popup() . "\<Left>"
-inoremap <expr><Right> neocomplcache#close_popup() . "\<Right>"
+" inoremap <expr><Left>  neocomplcache#close_popup() . "\<Left>"
+" inoremap <expr><Right> neocomplcache#close_popup() . "\<Right>"
 " inoremap <expr><Up>    neocomplcache#close_popup() . "\<Up>"
 " inoremap <expr><Down>  neocomplcache#close_popup() . "\<Down>"
 

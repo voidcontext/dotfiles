@@ -1,6 +1,7 @@
-set PATH /home/pgee/bin $PATH
+set PATH /home/pgee/bin /home/pgee/.composer/vendor/bin $PATH
 set PAGER less
 set EDITOR /usr/bin/vim
+set MYSQL_PS1 "\u@\h [\d]> "
 
 function hg
 	if [ $argv[1] = stat ]

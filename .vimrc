@@ -195,3 +195,7 @@ else
 	colorscheme Monokai2
 endif
 hi SpecialKey ctermfg=237 guifg=#333333
+
+inoremap <C-F2> vim: expandtab ts=2 sw=2
+inoremap <C-F4> vim: expandtab ts=4 sw=4
+

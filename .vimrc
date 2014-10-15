@@ -17,9 +17,9 @@ Bundle 'gmarik/vundle'
 " git plugin
 Bundle 'tpope/vim-fugitive'
 " file tree
-"Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdtree'
 " nerdtree tabs - not used because of ctrl-space
-"Bundle 'jistr/vim-nerdtree-tabs'
+Bundle 'jistr/vim-nerdtree-tabs'
 " extended javascript syntax
 "Bundle 'jelera/vim-javascript-syntax'
 " extended javascript syntax
@@ -71,6 +71,9 @@ Bundle 'majutsushi/tagbar'
 " colorscheme scroller
 Bundle 'ScrollColors'
 
+" neocomplcache might need this
+Bundle 'vim-scripts/dbext.vim'
+
 
 filetype plugin indent on     " required!
 
@@ -115,7 +118,7 @@ cab Q q
 cab Wq wq
 
 map <C-n> :tabnew<CR>
-map <C-l> :NERDTreeToggle<CR>
+map <C-l> :NERDTreeTabsToggle<CR>
 map <F2> :set invlist<CR>:IndentLinesToggle<CR>
 map <F4> :SignifyToggle<CR>
 map <F6> :split<CR>:ConqueTerm bash<CR>
@@ -138,6 +141,9 @@ set list lcs=tab:\|\▸
 
 "
 let g:signify_vcs_list = [ 'git' ]  
+" don't use phpcs even if it is available
+" let g:syntastic_php_checkers = ['php']
+
 " NeoComplCache settings
 
 " Use neocomplcache.

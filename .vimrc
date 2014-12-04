@@ -64,6 +64,10 @@ Bundle 'digitaltoad/vim-jade'
 Bundle 'szw/vim-ctrlspace'
 Bundle 'majutsushi/tagbar'
 
+Bundle 'vim-scripts/lh-vim-lib'
+Bundle 'LucHermitte/local_vimrc'
+
+Bundle 'editorconfig/editorconfig-vim'
 
 " solarized colorscheme
 "Bundle 'altercation/vim-colors-solarized'
@@ -119,7 +123,7 @@ cab Q q
 cab Wq wq
 
 map <C-n> :tabnew<CR>
-map <C-l> :NERDTreeTabsToggle<CR>
+map <C-k> :NERDTreeTabsToggle<CR>
 map <F2> :set invlist<CR>:IndentLinesToggle<CR>
 map <F4> :SignifyToggle<CR>
 map <F6> :split<CR>:ConqueTerm bash<CR>

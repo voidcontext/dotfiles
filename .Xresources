@@ -1,0 +1,30 @@
+
+! Molokai theme
+*xterm*faceName: "Liberation Mono:antialias=true"
+*xterm*faceSize: 9
+*xterm*background: #272822
+*xterm*foreground: #f8f8f2
+*xterm*cursorColor: #f8f8f2
+*xterm*color0: #101010
+*xterm*color1: #ed2169
+*xterm*color2: #66aa11
+*xterm*color3: #c47f2c
+*xterm*color4: #30309b
+*xterm*color5: #7e40a5
+*xterm*color6: #3579a8
+*xterm*color7: #9999aa
+*xterm*color8: #636155
+*xterm*color9: #ff0090
+*xterm*color10: #80ff00
+*xterm*color11: #ffba68
+*xterm*color12: #5f5fee
+*xterm*color13: #bb88dd
+*xterm*color14: #4eb4fa
+*xterm*color15: #d0d0d0
+
+Xft.dpi: 96
+Xft.antialias: 1
+Xft.hinting: 1
+Xft.hintstyle: hintslight
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault

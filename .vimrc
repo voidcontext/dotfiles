@@ -97,12 +97,14 @@ set bs=2
 au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.dust set filetype=html
 au BufNewFile,BufRead *.jade set filetype=jade
+au BufNewFile,BufRead *.scala set filetype=scala
 
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType json setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType jade setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType perl setlocal shiftwidth=2 tabstop=2 expandtab
+autocmd FileType scala setlocal shiftwidth=2 tabstop=2 expandtab
 
 set incsearch
 set hlsearch

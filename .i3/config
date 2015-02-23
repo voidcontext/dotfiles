@@ -141,6 +141,9 @@ bindsym $mod+c exec "xsel -p -o | xsel -i -b"
 #thunar
 bindsym $mod+t exec thunar
 
+# switch keyboard layout
+bindsym $mod+Control+l exec switch_kblayout
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode

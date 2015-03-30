@@ -73,7 +73,7 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+# bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -124,6 +124,11 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # toggle borders
 bindsym Control+Shift+1 [class="^.*"] border toggle
 for_window [class="^.*"] border pixel 1
+
+#scratchpad
+bindsym $mod+Shift+s move scratchpad
+bindsym $mod+s scratchpad show
+
 
 #lock screen
 bindsym Control+Shift+l exec "gnome-screensaver-command --lock"

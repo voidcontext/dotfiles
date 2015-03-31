@@ -129,6 +129,7 @@ map <C-k> :NERDTreeTabsToggle<CR>
 map <F2> :set invlist<CR>:IndentLinesToggle<CR>
 map <F4> :SignifyToggle<CR>
 map <F6> :split<CR>:ConqueTerm bash<CR>
+map <F9> :tabnew<CR>:ConqueTerm npm test<CR>
 map <C-F6> :vsplit<CR>:ConqueTerm bash<CR>
 
 " CtrlP options

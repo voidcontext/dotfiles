@@ -6,77 +6,77 @@ set shell=bash
 set nocompatible              " be iMproved
 filetype off                  " required!
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#rc()
 
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
 " My Bundles here
 " git plugin
-Bundle 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 " file tree
-Bundle 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 " nerdtree tabs - not used because of ctrl-space
-Bundle 'jistr/vim-nerdtree-tabs'
+Plugin 'jistr/vim-nerdtree-tabs'
 " extended javascript syntax
 "Bundle 'jelera/vim-javascript-syntax'
 " extended javascript syntax
-Bundle "pangloss/vim-javascript"
+" Plugin 'pangloss/vim-javascript'
 " javascript indent
-Bundle 'vim-scripts/JavaScript-Indent'
+" Plugin 'vim-scripts/JavaScript-Indent'
 " vcs info on gutter
-Bundle 'mhinz/vim-signify'
+Plugin 'mhinz/vim-signify'
 " sass syntax
-Bundle 'cakebaker/scss-syntax.vim'
+" Plugin 'cakebaker/scss-syntax.vim'
 " file finder
-Bundle 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 " show tabs when expandtabs is on
-Bundle 'Yggdroot/indentLine'
+Plugin 'Yggdroot/indentLine'
 " syntax checker
-Bundle 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 " auto brackets
-Bundle 'Raimondi/delimitMate'
+Plugin 'Raimondi/delimitMate'
 " mercurial plugin
-Bundle 'phleet/vim-mercenary'
+" Plugin 'phleet/vim-mercenary'
 " extended statusbar
-Bundle 'bling/vim-airline'
+Plugin 'bling/vim-airline'
 " terminal inside vim
-Bundle 'rosenfeld/conque-term'
+Plugin 'rosenfeld/conque-term'
 " Ag searcher (needs silversearcher-ag)
 "Bundle 'ervandew/ag'
-Bundle 'rking/ag.vim'
+Plugin 'rking/ag.vim'
 " code completion
 "Bundle 'Valloric/YouCompleteMe'
 " code completion
-Bundle 'Shougo/neocomplcache.vim'
+Plugin 'Shougo/neocomplcache.vim'
 " match html tags
 "Bundle 'gregsexton/MatchTag'
 " coffee sscript
-Bundle 'kchmck/vim-coffee-script'
+" Plugin 'kchmck/vim-coffee-script'
 " Color scheme gui only
-Bundle 'lsdr/monokai'
+Plugin 'lsdr/monokai'
 
-Bundle 'ciaranm/detectindent'
-Bundle 'digitaltoad/vim-jade'
+Plugin 'ciaranm/detectindent'
+" Plugin 'digitaltoad/vim-jade'
 
-Bundle 'szw/vim-ctrlspace'
-Bundle 'majutsushi/tagbar'
+" Plugin 'szw/vim-ctrlspace'
+Plugin 'majutsushi/tagbar'
 
-Bundle 'vim-scripts/lh-vim-lib'
-Bundle 'LucHermitte/local_vimrc'
+" Plugin 'vim-scripts/lh-vim-lib'
+" Plugin 'LucHermitte/local_vimrc'
 
-Bundle 'editorconfig/editorconfig-vim'
+Plugin 'editorconfig/editorconfig-vim'
 
 " solarized colorscheme
 "Bundle 'altercation/vim-colors-solarized'
 
 " colorscheme scroller
-Bundle 'ScrollColors'
+Plugin 'ScrollColors'
 
 " neocomplcache might need this
-Bundle 'vim-scripts/dbext.vim'
+Plugin 'vim-scripts/dbext.vim'
 
 
 filetype plugin indent on     " required!
@@ -128,16 +128,16 @@ map <C-n> :tabnew<CR>
 map <C-k> :NERDTreeTabsToggle<CR>
 map <F2> :set invlist<CR>:IndentLinesToggle<CR>
 map <F4> :SignifyToggle<CR>
-map <F6> :split<CR>:ConqueTerm bash<CR>
+map <F6> :split<CR>:ConqueTerm zsh<CR>
 map <F9> :tabnew<CR>:ConqueTerm npm test<CR>
-map <C-F6> :vsplit<CR>:ConqueTerm bash<CR>
+map <C-F6> :vsplit<CR>:ConqueTerm zsh<CR>
 
 " CtrlP options
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_custom_ignore = '\v[\/](\.(git|hg|svn|sass-cache|vagrant|librarian|node)|node_modules)$'
 
 " Airline options
-let g:airline_theme='wombat'
+" let g:airline_theme='wombat'
 let g:airline_exclude_preview = 1
 
 " Indentline
@@ -191,7 +191,7 @@ nmap <F8> :TagbarToggle<CR>
 
 " GUI dependent settings
 if has("gui_running")
-	colorscheme monokai
+	colorscheme darcula
 
 	" Remove toolbar
 	set guioptions-=T 
@@ -199,14 +199,14 @@ if has("gui_running")
 	set guioptions-=L
 	set guioptions-=r
 	set guioptions-=e
-	set guifont=Liberation\ Mono\ for\ Powerline\ 9
+	set guifont=Monaco\ 12
 	let g:airline_powerline_fonts=1
 
 	hi CtrlSpaceNormal guifg=#F8F8F2 guibg=#3E3D32
 	hi CtrlSpaceSelected guifg=#FD971F guibg=#272822 gui=bold
 
 else
-	colorscheme Monokai2
+	colorscheme darcula
 endif
 hi SpecialKey ctermfg=237 guifg=#333333
 
